@@ -1,0 +1,36 @@
+<html ng-app="demo">
+  <head>
+    <title>Posts</title>
+  </head>
+  <body>
+    <code-editor syntax="javascript" theme="vibrant-ink" ng-model="content.code">
+      var sum = function (a, b) {
+        return a + b;
+      }
+    </code-editor>
+
+    <textarea ng-model="content.code" cols="100" rows="50"></textarea>
+  </body>
+
+  <!-- app files -->
+  <script src='vendor/angular.js'></script>
+  <script src='app.js'></script>
+
+  <!-- Code Editor component -->
+
+  <!-- Code Editor Vendor -->
+  <script src='components/codeEditor/vendor/codemirror/codemirror.js'></script>
+  <script src='components/codeEditor/vendor/codemirror/modes/javascript/javascript.js'></script>
+
+  <!-- Code Editor Styles -->
+  <link rel="stylesheet" href="/components/codeEditor/styles/codemirror/codemirror.css">
+  <link rel="stylesheet" href="/components/codeEditor/styles/codemirror/themes/vibrant-ink.css">
+
+  <!-- Code Editor Directives -->
+  <script src='components/codeEditor/codeEditor.js'></script>
+
+  <!-- Code Editor Services -->
+  <script src='components/codeEditor/services/textUtils.js'></script>
+
+  <!-- End Code Editor component -->
+</html>
