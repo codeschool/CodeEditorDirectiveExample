@@ -9,4 +9,4 @@ npm install
 npm start
 ```
 
-visit http://localhost:8888 in your browser.
+visit [http://localhost:8888](http://localhost:8888) in your browser.
